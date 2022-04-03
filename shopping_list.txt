@@ -3,3 +3,4 @@ eggs x10
 bread x4
 banana x8
 pasta x2
+juice x4
