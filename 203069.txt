@@ -1,0 +1,142 @@
+2. Отварајќи го линкот го променив името на главната гранка од main во master.
+
+3. Со опцијата во Repositories во New креирав нов репозиториум со SI_2022_lab1_203069, каде додадов нов README file и додадов име,презиме и број на индекс.
+
+4. Со командата git clone го клонирав репозиториумот
+
+5. Со помош на командата nano креирав текстуална датотека shopping_list.txt , внесов 5 производи , потоа git add shopping_list.txt и на крај направив комит git commit -m "Add 5 items to the shipping list" 
+
+6. Повторно со комадната nano shopping_list.txt влегов во датотеката и додадов количини , потоа повторно git add shopping_list.txt и направив комит git commit -m "Add quantities to the items"
+
+7. Со командата git branch branch1 , git branch branch2 креирав 2 нови гранки
+
+8. 
+
+DeLL@DESKTOP-A9PEM65 MINGW64 ~/Desktop/SI_2022_lab1_203069 (master)
+$ git log
+commit 0c51c06f5763677dad06db011061d073c30823e6 (HEAD -> master, branch2, branch1)
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:41:58 2022 +0200
+
+    Add quantities to the items
+
+commit 9aa53aa8591eac0f967c9ab0f608a17ad0798aca
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:41:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 33d1911086431b63a9bfcc4eb2747dddec0115b7 (origin/master, origin/HEAD)
+Author: MarijaMiteva <102690419+MarijaMiteva@users.noreply.github.com>
+Date:   Sun Apr 3 18:34:58 2022 +0200
+
+    Update README.md
+
+commit 4708f9bc288dc80cd9fd4830681d09b280dba0af
+Author: MarijaMiteva <102690419+MarijaMiteva@users.noreply.github.com>
+Date:   Sun Apr 3 18:34:41 2022 +0200
+
+    Initial commit
+
+
+9. За да ги синхронизирам ја искористив командата git push , исто така и git push origin master branch1 , git push origin master branch2
+
+10. Се префрлив на гранката со командата git checkout branch1 
+
+11. Во едиторот nano shopping_list.txt ги направив промените потоа git add shopping_list.txt , git commit -m "Change quantity of item #5"
+
+12. Се префрлив на гранката со командата git checkout master
+
+13. Во едиторот nano shopping_list.txt ги направив промените потоа git add shopping_list.txt , git commit -m "Change quantity of item #2"
+
+14. Направив git push 
+
+15. Се префрлив на гранката со командата git checkout branch2
+
+16. Во едиторот nano shopping_list.txt ги направив промените потоа git add shopping_list.txt , git commit -m "Modify item #4"
+
+17. 
+
+DeLL@DESKTOP-A9PEM65 MINGW64 ~/Desktop/SI_2022_lab1_203069 (branch2)
+$ git log
+commit f635eacf7c65985185d4362e57ab3ff67b0ba2de (HEAD -> branch2)
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:48:07 2022 +0200
+
+    Modify item #4
+
+commit 0c51c06f5763677dad06db011061d073c30823e6 (origin/branch2)
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:41:58 2022 +0200
+
+    Add quantities to the items
+
+commit 9aa53aa8591eac0f967c9ab0f608a17ad0798aca
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:41:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 33d1911086431b63a9bfcc4eb2747dddec0115b7
+Author: MarijaMiteva <102690419+MarijaMiteva@users.noreply.github.com>
+Date:   Sun Apr 3 18:34:58 2022 +0200
+
+    Update README.md
+
+commit 4708f9bc288dc80cd9fd4830681d09b280dba0af
+Author: MarijaMiteva <102690419+MarijaMiteva@users.noreply.github.com>
+Date:   Sun Apr 3 18:34:41 2022 +0200
+
+    Initial commit
+
+
+18. Во едиторот nano shopping_list.txt ги направив промените и додадов нова 6та ставка потоа git add shopping_list.txt , git commit -m "Modify item #4 and add item #6"
+
+19.
+
+DeLL@DESKTOP-A9PEM65 MINGW64 ~/Desktop/SI_2022_lab1_203069 (branch2)
+$ git log
+commit f1ae771366067c77caf876a805910ad328b52ad8 (HEAD -> branch2)
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:50:21 2022 +0200
+
+    Modify item #4 and add item #6
+
+commit f635eacf7c65985185d4362e57ab3ff67b0ba2de
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:48:07 2022 +0200
+
+    Modify item #4
+
+commit 0c51c06f5763677dad06db011061d073c30823e6 (origin/branch2)
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:41:58 2022 +0200
+
+    Add quantities to the items
+
+commit 9aa53aa8591eac0f967c9ab0f608a17ad0798aca
+Author: Marija Miteva <marija.miteva@students.finki.ukim.mk>
+Date:   Sun Apr 3 18:41:14 2022 +0200
+
+    Add 5 items to the shopping list
+
+commit 33d1911086431b63a9bfcc4eb2747dddec0115b7
+Author: MarijaMiteva <102690419+MarijaMiteva@users.noreply.github.com>
+Date:   Sun Apr 3 18:34:58 2022 +0200
+
+    Update README.md
+
+commit 4708f9bc288dc80cd9fd4830681d09b280dba0af
+Author: MarijaMiteva <102690419+MarijaMiteva@users.noreply.github.com>
+Date:   Sun Apr 3 18:34:41 2022 +0200
+
+    Initial commit
+
+
+20. Се префрлив на гранката со командата git checkout master и потоа git merge branch1 . Овде не се појави конфликт и е употребена рекурзивна стртегија
+
+21. Овде се појави конфликт. Се вратив во едиторот и го решив конфликтот. Потоа направив git add и git commit. Употребив рекурзивна стратегија
+
+22. Ја додадов датотеката git add 203069.txt , git commit -m "Add docs" 
+
+23. Синхронизирав се со git push 
