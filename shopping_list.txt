@@ -1,5 +1,5 @@
 milk x2
-eggs x10
+eggs x5
 bread x4
 apples x8
 pasta x2
