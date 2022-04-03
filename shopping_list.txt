@@ -1,5 +1,10 @@
 milk x2
 eggs x5
 bread x4
+<<<<<<< HEAD
 apples x4
+=======
+banana x8
+>>>>>>> branch2
 pasta x2
+juice x4
